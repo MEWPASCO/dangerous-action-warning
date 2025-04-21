@@ -1,3 +1,13 @@
+/**
+ * @name Dangerous Action Warning
+ * @author Wolfÿ
+ * @version 1.0.0
+ * @description Adds dangerous colors to dangerous user actions
+ * @invite avia
+ * @source https://github.com/MEWPASCO/rainbowglow-avatars
+ * @website https://www.avariaxyz.win/
+ */
+
 /* Add dangerous colours to dangerous user actions */
 /* red text */
 #user-context-close-dm .label_c1e9c4,
