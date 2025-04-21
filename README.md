@@ -41,7 +41,7 @@ Paste this into your QuickCSS (Or any non-Vencord equivalent) to make it a littl
 > [!NOTE]
 > Must be at the top of your code, @import does not work otherwise - this is for all the @import code you might have - put it to the top!  
 ```
-/* timestamp-tweaks */
+/* dangerous css */
 @import url('https://raw.githubusercontent.com/MEWPASCO/dangerous-action-warning/refs/heads/main/danger');
 ```
 
