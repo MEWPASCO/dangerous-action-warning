@@ -8,42 +8,37 @@
  * @website https://www.avariaxyz.win/
  */
 
-/* Add dangerous colours to dangerous user actions */
-/* red text */
-#user-context-close-dm .label_c1e9c4,
-#user-context-remove-friend .label_c1e9c4,
-#user-context-ignore .label_c1e9c4,
-#user-context-ignore .label__202d8,
-#user-context-mute-channel .label_c1e9c4 {
-    color: var(--text-danger) !important;
+/* === Add dangerous colours to dangerous user actions === */
+/* === Static Red Text === */
+:is(
+  #user-context-close-dm,
+  #user-context-remove-friend,
+  #user-context-ignore,
+  #user-context-mute-channel,
+  [id^="user-context-mute-channel--"]
+) .label_c1e9c4,
+#user-context-ignore .label__202d8 {
+  color: var(--text-danger);
 }
 
-/* red hover background and hover text */
-#user-context-close-dm.focused_c1e9c4 .label_c1e9c4,
-#user-context-remove-friend.focused_c1e9c4 .label_c1e9c4,
-#user-context-ignore.focused_c1e9c4 .label_c1e9c4,
-#user-context-ignore.focused_c1e9c4 .label__202d8,
-#user-context-mute-channel.focused_c1e9c4 .label_c1e9c4 {
-    color: var(--text-feedback-critical) !important;
+/* === Hovered/Focused Red Text + Background === */
+:is(
+  #user-context-close-dm,
+  #user-context-remove-friend,
+  #user-context-ignore,
+  #user-context-mute-channel,
+  [id^="user-context-mute-channel--"]
+).focused_c1e9c4 {
+  background-color: var(--background-feedback-critical);
 }
 
-#user-context-close-dm.focused_c1e9c4,
-#user-context-remove-friend.focused_c1e9c4,
-#user-context-ignore.focused_c1e9c4,
-#user-context-mute-channel.focused_c1e9c4 {
-    background-color: var(--background-feedback-critical) !important;
-}
-
-/* red text for all time-based mute buttons */
-[id^="user-context-mute-channel--"] .label_c1e9c4 {
-    color: var(--text-danger) !important;
-}
-
-/* same just at hover over buttons */
-[id^="user-context-mute-channel--"].focused_c1e9c4 {
-    background-color: var(--background-feedback-critical) !important;
-}
-
-[id^="user-context-mute-channel--"].focused_c1e9c4 .label_c1e9c4 {
-    color: var(--text-feedback-critical) !important;
+:is(
+  #user-context-close-dm,
+  #user-context-remove-friend,
+  #user-context-ignore,
+  #user-context-mute-channel,
+  [id^="user-context-mute-channel--"]
+).focused_c1e9c4 .label_c1e9c4,
+#user-context-ignore.focused_c1e9c4 .label__202d8 {
+  color: var(--text-feedback-critical);
 }
