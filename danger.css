@@ -16,8 +16,8 @@
   #user-context-ignore,
   #user-context-mute-channel,
   [id^="user-context-mute-channel--"]
-) .label_c1e9c4,
-#user-context-ignore .label__202d8 {
+) .c1e9c47c23f12ca3-label,
+#user-context-ignore ._202d80cea47aca3c-label {
   color: var(--text-danger);
 }
 
@@ -28,7 +28,7 @@
   #user-context-ignore,
   #user-context-mute-channel,
   [id^="user-context-mute-channel--"]
-).focused_c1e9c4 {
+).c1e9c47c23f12ca3-focused {
   background-color: var(--background-feedback-critical);
 }
 
@@ -38,7 +38,7 @@
   #user-context-ignore,
   #user-context-mute-channel,
   [id^="user-context-mute-channel--"]
-).focused_c1e9c4 .label_c1e9c4,
-#user-context-ignore.focused_c1e9c4 .label__202d8 {
+).c1e9c47c23f12ca3-focused .c1e9c47c23f12ca3-label,
+#user-context-ignore.c1e9c47c23f12ca3-focused ._202d80cea47aca3c-label {
   color: var(--text-feedback-critical);
 }
